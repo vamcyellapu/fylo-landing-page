@@ -22,6 +22,7 @@ body {
   font-size: 2rem;
   font-family: "Open Sans", Arial, Helvetica, sans-serif;
   color: $color-heading;
+  // background-color: $color-heading;
 }
 h1,
 h2,
@@ -57,7 +58,9 @@ h3 {
 
 .link {
   text-decoration: none;
+
   &--primary {
+    color: $color-heading;
     &:hover {
       color: $color-primary;
     }
@@ -73,6 +76,40 @@ h3 {
     }
     &:hover {
       opacity: 0.6;
+    }
+  }
+}
+
+// Lists
+
+.list {
+  list-style: none;
+  display: flex;
+  &--nav {
+    font-size: 1.8rem;
+    gap: 3.3rem;
+  }
+  &--footer {
+    flex-direction: column;
+    gap: 2.3rem;
+    font-size: 2.3rem;
+    .link--primary {
+      color: $color-bg;
+      &:hover {
+        color: $color-primary;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .list {
+    &--nav {
+      gap: 5rem;
+    }
+    &--footer {
+      font-size: 1.7rem;
+      gap: 1.5rem;
     }
   }
 }

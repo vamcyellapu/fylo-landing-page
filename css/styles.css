@@ -51,6 +51,9 @@ h2 {
 .link {
   text-decoration: none;
 }
+.link--primary {
+  color: hsl(243deg, 87%, 12%);
+}
 .link--primary:hover {
   color: hsl(224deg, 93%, 58%);
 }
@@ -66,4 +69,34 @@ h2 {
 }
 .link--secondary:hover {
   opacity: 0.6;
+}
+
+.list {
+  list-style: none;
+  display: flex;
+}
+.list--nav {
+  font-size: 1.8rem;
+  gap: 3.3rem;
+}
+.list--footer {
+  flex-direction: column;
+  gap: 2.3rem;
+  font-size: 2.3rem;
+}
+.list--footer .link--primary {
+  color: hsl(240deg, 75%, 98%);
+}
+.list--footer .link--primary:hover {
+  color: hsl(224deg, 93%, 58%);
+}
+
+@media screen and (min-width: 768px) {
+  .list--nav {
+    gap: 5rem;
+  }
+  .list--footer {
+    font-size: 1.7rem;
+    gap: 1.5rem;
+  }
 }/*# sourceMappingURL=styles.css.map */
