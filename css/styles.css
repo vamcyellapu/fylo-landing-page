@@ -14,6 +14,7 @@ body {
   font-size: 2rem;
   font-family: "Open Sans", Arial, Helvetica, sans-serif;
   color: hsl(243deg, 87%, 12%);
+  background-color: hsl(243deg, 87%, 12%);
 }
 
 h1,
@@ -99,4 +100,29 @@ h2 {
     font-size: 1.7rem;
     gap: 1.5rem;
   }
+}
+.icon {
+  display: flex;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  border: 1px solid hsl(240deg, 75%, 98%);
+  padding: 1.5rem;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+}
+.icon-container {
+  display: flex;
+  gap: 1.2rem;
+  cursor: pointer;
+}
+.icon .link--primary {
+  color: hsl(240deg, 75%, 98%);
+}
+.icon:hover {
+  border-color: hsl(224deg, 93%, 58%);
+}
+.icon:hover .link--primary {
+  color: hsl(224deg, 93%, 58%);
 }/*# sourceMappingURL=styles.css.map */

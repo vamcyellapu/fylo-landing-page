@@ -22,7 +22,7 @@ body {
   font-size: 2rem;
   font-family: "Open Sans", Arial, Helvetica, sans-serif;
   color: $color-heading;
-  // background-color: $color-heading;
+  background-color: $color-heading;
 }
 h1,
 h2,
@@ -111,5 +111,33 @@ h3 {
       font-size: 1.7rem;
       gap: 1.5rem;
     }
+  }
+}
+
+// Icons
+
+.icon {
+  &-container {
+    display: flex;
+    gap: 1.2rem;
+    cursor: pointer;
+  }
+  .link--primary {
+    color: $color-bg;
+  }
+  display: flex;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  border: 1px solid $color-bg;
+  padding: 1.5rem;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  &:hover {
+    .link--primary {
+      color: $color-primary;
+    }
+    border-color: $color-primary;
   }
 }
