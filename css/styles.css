@@ -16,8 +16,54 @@ body {
   color: hsl(243deg, 87%, 12%);
 }
 
+h1,
+h2,
+h3 {
+  font-weight: 700;
+  font-family: "Raleway", Arial, Helvetica, sans-serif;
+  line-height: 1.4;
+}
+
+h1 {
+  font-size: 3.6rem;
+}
+
+h2 {
+  font-size: 2.4rem;
+}
+
+h3 {
+  font-size: 2.6rem;
+}
+
 @media screen and (min-width: 768px) {
   body {
     font-size: 1.8rem;
   }
+  h1,
+h2 {
+    font-size: 4rem;
+  }
+  h3 {
+    font-size: 3.2rem;
+  }
+}
+.link {
+  text-decoration: none;
+}
+.link--primary:hover {
+  color: hsl(224deg, 93%, 58%);
+}
+.link--secondary {
+  color: hsl(170deg, 45%, 43%);
+  border-bottom: 1px solid hsl(170deg, 45%, 43%);
+  padding-bottom: 0.5rem;
+}
+.link--secondary::after {
+  content: url(../images/icon-arrow.svg);
+  vertical-align: middle;
+  margin-left: 0.5rem;
+}
+.link--secondary:hover {
+  opacity: 0.6;
 }/*# sourceMappingURL=styles.css.map */
