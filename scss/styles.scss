@@ -22,7 +22,7 @@ body {
   font-size: 2rem;
   font-family: "Open Sans", Arial, Helvetica, sans-serif;
   color: $color-heading;
-  background-color: $color-heading;
+  // background-color: $color-heading;
 }
 h1,
 h2,
@@ -88,6 +88,7 @@ h3 {
   &--nav {
     font-size: 1.8rem;
     gap: 3.3rem;
+    font-family: "Raleway", Arial, Helvetica, sans-serif;
   }
   &--footer {
     flex-direction: column;
@@ -139,5 +140,34 @@ h3 {
       color: $color-primary;
     }
     border-color: $color-primary;
+  }
+}
+
+// Buttons
+
+.btn {
+  font-family: "Raleway", Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  width: 100%;
+  border: none;
+  font-size: 1.4rem;
+  border-radius: 5px;
+  padding: 1.5rem 6rem;
+  text-align: center;
+  &--primary {
+    background: $color-primary;
+    color: $color-bg;
+  }
+  &--m {
+    border-radius: 0;
+    padding: 1.5rem 3.2rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .btn {
+    width: auto;
+    &--m {
+    }
   }
 }

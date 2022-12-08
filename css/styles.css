@@ -14,7 +14,6 @@ body {
   font-size: 2rem;
   font-family: "Open Sans", Arial, Helvetica, sans-serif;
   color: hsl(243deg, 87%, 12%);
-  background-color: hsl(243deg, 87%, 12%);
 }
 
 h1,
@@ -79,6 +78,7 @@ h2 {
 .list--nav {
   font-size: 1.8rem;
   gap: 3.3rem;
+  font-family: "Raleway", Arial, Helvetica, sans-serif;
 }
 .list--footer {
   flex-direction: column;
@@ -125,4 +125,29 @@ h2 {
 }
 .icon:hover .link--primary {
   color: hsl(224deg, 93%, 58%);
+}
+
+.btn {
+  font-family: "Raleway", Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  width: 100%;
+  border: none;
+  font-size: 1.4rem;
+  border-radius: 5px;
+  padding: 1.5rem 6rem;
+  text-align: center;
+}
+.btn--primary {
+  background: hsl(224deg, 93%, 58%);
+  color: hsl(240deg, 75%, 98%);
+}
+.btn--m {
+  border-radius: 0;
+  padding: 1.5rem 3.2rem;
+}
+
+@media screen and (min-width: 768px) {
+  .btn {
+    width: auto;
+  }
 }/*# sourceMappingURL=styles.css.map */
