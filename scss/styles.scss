@@ -1,0 +1,31 @@
+$color-primary: hsl(224, 93%, 58%);
+$color-secondary: hsl(170, 45%, 43%);
+$color-heading: hsl(243, 87%, 12%);
+$color-grey: hsl(0, 0%, 75%);
+$color-bg: hsl(240, 75%, 98%);
+$color-bg-2: hsl(238, 22%, 44%);
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+// Typography
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 2rem;
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  color: $color-heading;
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    font-size: 1.8rem;
+  }
+}
