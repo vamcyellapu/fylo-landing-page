@@ -171,3 +171,18 @@ h3 {
     }
   }
 }
+
+// Grid
+
+.grid {
+  display: grid;
+  padding: 2rem;
+  min-height: 50vh;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  .box-1 {
+    background-color: dodgerblue;
+  }
+  .box-2 {
+    background-color: tomato;
+  }
+}
