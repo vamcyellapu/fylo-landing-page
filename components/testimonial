@@ -1,0 +1,18 @@
+ <blockquote class="testimonial">
+      <p class="testimonial__text">
+        Fylo has improved our team productivity by an order of magnitude. Since
+        making the switch our team has become a well-oiled collaboration
+        machine.
+      </p>
+      <div class="testimonial__person">
+        <img
+          src="./images/avatar-testimonial.jpg"
+          class="person__avatar"
+          alt=""
+        />
+        <div class="person__details">
+          <p class="person__name">Kyle Burton</p>
+          <span class="person__designation">Founder & CEO, Huddle</span>
+        </div>
+      </div>
+    </blockquote>

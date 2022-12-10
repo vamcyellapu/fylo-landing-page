@@ -312,3 +312,69 @@ h3 {
     }
   }
 }
+
+// Testimonial
+.testimonial {
+  padding: 2rem 3rem;
+  padding-right: 2rem;
+  box-shadow: 0 0 20px 5px transparentize($color: #000000, $amount: 0.94);
+  border-radius: 5px;
+
+  max-width: 36rem;
+  &__text {
+    font-size: 1.5rem;
+    line-height: 1.7;
+    margin-bottom: 2rem;
+
+    &::before {
+      content: url(../images/icon-quotes.svg);
+      zoom: 1.5;
+      line-height: 0;
+      display: block;
+      font-family: "Raleway", Arial, Helvetica, sans-serif;
+      margin-bottom: 1rem;
+    }
+  }
+  &__person {
+    display: flex;
+    // justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    .person {
+      &__avatar {
+        width: 3.5rem;
+        border-radius: 50%;
+        display: block;
+      }
+      &__details {
+        display: flex;
+        flex-direction: column;
+      }
+      &__name {
+        font-weight: 700;
+        font-size: 1.4rem;
+      }
+      &__designation {
+        font-size: 1.2rem;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .testimonial {
+    &__text {
+      font-size: 1.4rem;
+    }
+    &__person {
+      .person {
+        &__name {
+          font-size: 1.2rem;
+        }
+        &__designation {
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+}

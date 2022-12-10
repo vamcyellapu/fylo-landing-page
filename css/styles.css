@@ -287,4 +287,57 @@ h2 {
   .hero__content .input-group {
     max-width: 50rem;
   }
+}
+.testimonial {
+  padding: 2rem 3rem;
+  padding-right: 2rem;
+  box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.06);
+  border-radius: 5px;
+  max-width: 36rem;
+}
+.testimonial__text {
+  font-size: 1.5rem;
+  line-height: 1.7;
+  margin-bottom: 2rem;
+}
+.testimonial__text::before {
+  content: url(../images/icon-quotes.svg);
+  zoom: 1.5;
+  line-height: 0;
+  display: block;
+  font-family: "Raleway", Arial, Helvetica, sans-serif;
+  margin-bottom: 1rem;
+}
+.testimonial__person {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.testimonial__person .person__avatar {
+  width: 3.5rem;
+  border-radius: 50%;
+  display: block;
+}
+.testimonial__person .person__details {
+  display: flex;
+  flex-direction: column;
+}
+.testimonial__person .person__name {
+  font-weight: 700;
+  font-size: 1.4rem;
+}
+.testimonial__person .person__designation {
+  font-size: 1.2rem;
+}
+
+@media screen and (min-width: 768px) {
+  .testimonial__text {
+    font-size: 1.4rem;
+  }
+  .testimonial__person .person__name {
+    font-size: 1.2rem;
+  }
+  .testimonial__person .person__designation {
+    font-size: 1rem;
+  }
 }/*# sourceMappingURL=styles.css.map */
