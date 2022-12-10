@@ -132,14 +132,19 @@ h2 {
   font-weight: 700;
   width: 100%;
   border: none;
-  font-size: 1.4rem;
-  border-radius: 5px;
-  padding: 1.5rem 6rem;
+  font-size: 1.8rem;
+  border-radius: 3px;
+  padding: 2rem 6rem;
   text-align: center;
+  cursor: pointer;
+  white-space: nowrap;
 }
 .btn--primary {
   background: hsl(224deg, 93%, 58%);
   color: hsl(240deg, 75%, 98%);
+}
+.btn--primary:hover {
+  background-color: #7a9cfa;
 }
 .btn--m {
   border-radius: 0;
@@ -149,6 +154,8 @@ h2 {
 @media screen and (min-width: 768px) {
   .btn {
     width: auto;
+    font-size: 1.4rem;
+    padding: 1.5rem 6rem;
   }
 }
 .grid {
@@ -174,4 +181,60 @@ h2 {
   height: 500px;
   -webkit-clip-path: circle(300vh at 50% 303vh);
           clip-path: circle(300vh at 50% 303vh);
+}
+
+.input {
+  padding: 1.8rem 3rem;
+  font-size: 1.8rem;
+  font-family: "Raleway", Arial, Helvetica, sans-serif;
+  border-radius: 5px;
+  border: 1px solid hsl(243deg, 87%, 12%);
+  width: 100%;
+  outline: none;
+}
+.input-group {
+  display: flex;
+  gap: 2rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.input::-moz-placeholder {
+  color: hsl(0deg, 0%, 75%);
+}
+.input:-ms-input-placeholder {
+  color: hsl(0deg, 0%, 75%);
+}
+.input::placeholder {
+  color: hsl(0deg, 0%, 75%);
+}
+.input__error {
+  font-size: 1.3rem;
+  display: none;
+  color: #e60000;
+  align-self: flex-start;
+  margin-top: -1rem;
+}
+
+.display {
+  display: block;
+  border-color: #e60000;
+}
+
+@media screen and (min-width: 768px) {
+  .input {
+    padding: 1.4rem 2rem;
+    font-size: 1.4rem;
+    border-radius: 3px;
+  }
+  .input-group {
+    flex-direction: row;
+    gap: 1.5rem;
+  }
+  .input--bottom {
+    flex-direction: column;
+  }
+  .input--bottom .btn {
+    align-self: flex-start;
+  }
 }/*# sourceMappingURL=styles.css.map */
