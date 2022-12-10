@@ -4,7 +4,6 @@ const input = document.querySelector(".input");
 const errormsg = document.querySelector(".input__error");
 const pattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
 
-console.log(input.value);
 function keyPress() {
   if (!input.value.match(pattern)) {
     errormsg.classList.add("display");
